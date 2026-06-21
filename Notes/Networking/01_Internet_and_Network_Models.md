@@ -126,6 +126,31 @@ Responsible for transmitting bits over physical media.
 * Wireless Access Points (WAP)
 
 ---
+## Why OSI Model Was Not Widely Implemented
+
+Although the OSI model provides a well-structured seven-layer architecture, it was not widely implemented in real-world networks.
+
+### Reasons
+
+1. **TCP/IP Was Already Established**
+   - Before the OSI model was finalized, the TCP/IP protocol suite was already being used in ARPANET and other networks.
+   - Organizations had already invested in TCP/IP infrastructure.
+
+2. **High Migration Cost**
+   - Switching from TCP/IP to a fully OSI-based implementation would require significant changes to existing hardware and software.
+   - This would increase cost and implementation effort.
+
+3. **Complex Architecture**
+   - The OSI model consists of seven layers, making it more complex to implement.
+   - TCP/IP combines some functionalities into fewer layers, making it simpler and more practical.
+
+4. **TCP/IP Was Proven in Practice**
+   - TCP/IP had already demonstrated reliability and scalability in real-world environments.
+   - Organizations preferred a working solution over a newly proposed standard.
+
+5. **Industry Adoption**
+   - Universities, government organizations, and companies widely adopted TCP/IP.
+   - As adoption increased, TCP/IP became the standard protocol suite for the Internet.
 
 # Key Difference Between TCP/IP and OSI
 
