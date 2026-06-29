@@ -1,0 +1,123 @@
+# Day 3 - TCP/IP Model and Encapsulation
+
+## Objective
+
+Understand how data travels from one computer to another using the TCP/IP model and how encapsulation works.
+
+---
+
+# TCP/IP Model
+
+| Layer | Responsibility |
+|--------|----------------|
+| Application | Provides services to user applications (HTTP, HTTPS, DNS, FTP, SMTP) |
+| Transport | End-to-end communication using TCP or UDP |
+| Network | Logical addressing and routing using IP |
+| Data Link | Physical addressing using MAC addresses |
+| Physical | Transmission of bits over the communication medium |
+
+---
+
+# Encapsulation
+
+As data moves down the TCP/IP stack, each layer adds its own header.
+
+Data
+
+↓
+
+Segment (TCP Header)
+
+↓
+
+Packet (IP Header)
+
+↓
+
+Frame (MAC Header)
+
+↓
+
+Bits
+
+At the receiving end, headers are removed in reverse order (Decapsulation).
+
+---
+
+# Practical 1
+
+Command
+
+```cmd
+tracert google.com
+```
+
+**Learning**
+
+- Packets travel through multiple routers.
+- Each router forwards packets using routing tables.
+
+---
+
+# Practical 2
+
+Command
+
+```cmd
+nslookup google.com
+```
+
+**Learning**
+
+- DNS translates domain names into IP addresses.
+
+---
+
+# Practical 3
+
+Browser Developer Tools
+
+Website:
+
+https://www.google.com
+
+Observed:
+
+- HTML Document
+- JavaScript
+- Images
+- Fonts
+- SVG
+- XHR Requests
+
+HTTP Status:
+
+200 OK
+
+Learning:
+
+- One webpage consists of multiple HTTP requests.
+- Browsers download HTML, CSS, JavaScript, fonts, and images separately.
+
+---
+
+# Commands Learned
+
+```cmd
+ping google.com
+ipconfig
+tracert google.com
+nslookup google.com
+```
+
+---
+
+# Key Concepts Learned
+
+- TCP/IP Model
+- Encapsulation
+- Decapsulation
+- Routing
+- DNS
+- HTTP Requests
+- Browser Developer Tools
